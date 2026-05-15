@@ -1,0 +1,70 @@
+{
+  "version": "v3_next_temperature_ridge_sgd",
+  "feature_names": [
+    "temperature",
+    "temp_lag_1",
+    "temp_lag_2",
+    "temp_ema",
+    "cooling_level",
+    "workload_level",
+    "ambient_temperature",
+    "humidity",
+    "hour_sin",
+    "hour_cos",
+    "hotspot_flag"
+  ],
+  "weights": [
+    1.9650150461087263,
+    1.030140174792406,
+    0.7111184388387324,
+    1.6475953941194028,
+    -1.1605732570513765,
+    0.08637220342380221,
+    0.9784676503799697,
+    -0.3021256050976921,
+    -0.006326659864369519,
+    0.03069242469050768,
+    0.2050261859155217
+  ],
+  "bias": 35.738606262663325,
+  "means": {
+    "temperature": 35.78352152072159,
+    "temp_lag_1": 35.78365760931618,
+    "temp_lag_2": 35.78350302545956,
+    "temp_ema": 35.78355864824729,
+    "cooling_level": 65.98279626608203,
+    "workload_level": 26.396193328576665,
+    "ambient_temperature": 23.51083457015706,
+    "humidity": 65.5295433268687,
+    "hour_sin": 2.9548926258934024e-05,
+    "hour_cos": -0.00011027809410766849,
+    "hotspot_flag": 0.396860372188606
+  },
+  "stds": {
+    "temperature": 6.854442389526752,
+    "temp_lag_1": 6.854383037523432,
+    "temp_lag_2": 6.854444990276379,
+    "temp_ema": 5.964872505247274,
+    "cooling_level": 16.653571238950864,
+    "workload_level": 9.689232687230458,
+    "ambient_temperature": 4.164687151033383,
+    "humidity": 6.034348882100566,
+    "hour_sin": 0.7071417364602433,
+    "hour_cos": 0.7070718149676135,
+    "hotspot_flag": 0.4892465811581386
+  },
+  "metrics": {
+    "dataset_samples": 175180,
+    "regression": {
+      "holdout_samples": 35036,
+      "mae_c": 3.9573,
+      "rmse_c": 5.025
+    },
+    "policy_simulation": {
+      "temperature_variance_c2": 8.2448,
+      "average_cooling_level": 60.4248,
+      "average_control_switches": 11.71,
+      "safety_violations": 0
+    }
+  }
+}

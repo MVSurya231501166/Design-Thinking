@@ -1,0 +1,14 @@
+{
+  "dataset_samples": 175180,
+  "regression": {
+    "holdout_samples": 35036,
+    "mae_c": 3.9573,
+    "rmse_c": 5.025
+  },
+  "policy_simulation": {
+    "temperature_variance_c2": 8.2448,
+    "average_cooling_level": 60.4248,
+    "average_control_switches": 11.71,
+    "safety_violations": 0
+  }
+}
